@@ -1087,9 +1087,19 @@ section {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+.working {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
 .explain {
   padding-bottom: 10px;
+}
+.certificate-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .certificate {
@@ -1102,4 +1112,15 @@ section {
 .certificate:hover {
   transform: scale(1.1);
   /* Increase size by 10% on hover */
+}
+.ul {
+  list-style-type: none;
+  padding: 0;
+}
+li::before {
+  content: "\2022"; /* Unicode character for bullet point symbol */
+  color: lightseagreen; /* Color of the bullet point */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
